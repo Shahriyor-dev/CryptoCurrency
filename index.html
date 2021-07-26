@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRAPPO - Fastest & secure platform to invest in crypto</title>
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,12 +21,12 @@
       <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <a class="header__logo" href="/">
+            <a class="header__logo wow fadeInDownBig" href="/">
               <svg class="header__logo-icon icon">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </a>
-            <div class="header-right">
+            <div class="header-right wow fadeInDownBig">
               <ul class="header-list">
                 <li class="header-list__item">
                   <a class="header-list__link" href="#">Products</a>
@@ -54,7 +55,7 @@
       <section class="main">
         <div class="container">
           <div class="main__wrapper">
-            <div class="main-text">
+            <div class="main-text wow fadeInLeftBig">
               <div class="main-info">
                 <div class="main-info__save">75% SAVE</div>
                 <div class="main-info__black">For the Black Friday weekend</div>
@@ -68,7 +69,7 @@
               </p>
               <a class="button main-text__button" href="#">Try for FREE</a>
             </div>
-            <div class="main-img">
+            <div class="main-img wow fadeInRightBig">
               <img src="img/main-img.svg" alt="IMG of Bitcoin" />
             </div>
           </div>
@@ -78,7 +79,7 @@
     <section class="advantages">
       <div class="container">
         <div class="advantages__wrapper">
-          <div class="advantages-item">
+          <div class="advantages-item wow fadeInUpBig">
             <div class="advantages-item__img">
               <svg class="advantages-item__icon advantages-item__icon--1 icon">
                 <use xlink:href="img/sprite.svg#fortune"></use>
@@ -91,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="advantages-item">
+          <div class="advantages-item wow fadeInUpBig">
             <div class="advantages-item__img">
               <svg class="advantages-item__icon advantages-item__icon--2 icon">
                 <use xlink:href="img/sprite.svg#users"></use>
@@ -104,7 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="advantages-item">
+          <div class="advantages-item wow fadeInUpBig">
             <div class="advantages-item__img">
               <svg class="advantages-item__icon advantages-item__icon--3 icon">
                 <use xlink:href="img/sprite.svg#countries"></use>
@@ -123,7 +124,7 @@
     <section class="earn">
       <div class="container">
         <div class="earn-wrapper">
-          <div class="earn-text">
+          <div class="earn-text wow fadeInUpBig">
             <h2 class="earn-text__title">Check how much you can earn</h2>
             <p class="earn-text__description">
               Let’s check your hash rate to see how much you will earn today,
@@ -173,7 +174,8 @@
           Trade securely and market the high growth cryptocurrencies.
         </div>
         <div class="trade__wrapper">
-          <div class="trade-card">
+          <div class="trade-card wow fadeInDownBig" data-wow-delay="0.3s">
+            >
             <div class="trade-card__wrapper">
               <div class="trade-card__img">
                 <svg class="trade-card__icon trade-card__icon--1 icon">
@@ -198,7 +200,7 @@
               </a>
             </div>
           </div>
-          <div class="trade-card">
+          <div class="trade-card wow fadeInDownBig" data-wow-delay="0.6s">
             <div class="trade-card__wrapper">
               <div class="trade-card__img">
                 <svg class="trade-card__icon trade-card__icon--2 icon">
@@ -219,7 +221,7 @@
               </a>
             </div>
           </div>
-          <div class="trade-card">
+          <div class="trade-card wow fadeInDownBig" data-wow-delay="0.9s">
             <div class="trade-card__wrapper">
               <div class="trade-card__img">
                 <svg class="trade-card__icon trade-card__icon--3 icon">
@@ -260,10 +262,10 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-bottom__rights">
+          <div class="footer-bottom__rights wow fadeInLeftBig">
             ©2021 CRAPPO. All rights reserved
           </div>
-          <div class="footer-social">
+          <div class="footer-social wow fadeInRightBig">
             <a class="footer-social__link" href="#">
               <svg class="footer-social__icon footer-social__icon--1 icon">
                 <use xlink:href="img/sprite.svg#facebook"></use>
@@ -293,5 +295,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
