@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -9,6 +14,9 @@ body {
   letter-spacing: 0.01em;
   font-style: normal;
   color: #e0e0e0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .button:hover {
   color: #0d0d2b;
@@ -20,6 +28,7 @@ a {
 .container {
   max-width: 1200px;
   margin: auto;
+  width: 90%;
 }
 .button {
   background: #3671e9;
@@ -71,6 +80,10 @@ a {
   color: #e0e0e0a1;
   transition: all 0.3s;
 }
+.header__burger {
+  display: none;
+}
+
 .header-right {
   display: flex;
   align-items: center;
@@ -104,6 +117,10 @@ a {
 }
 .main-text {
   width: 588px;
+}
+.main-img img {
+  width: 604px;
+  height: 594px;
 }
 .main-info {
   background: rgba(255, 255, 255, 0.1);
@@ -204,6 +221,7 @@ a {
   line-height: 150%;
   color: #ffffff;
   margin-bottom: 21px;
+  margin-top: 0;
 }
 .earn-text__description {
   font-size: 18px;
@@ -321,6 +339,7 @@ a {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s;
+  border: 0.1px solid #aaa;
 }
 .trade-card:hover {
   box-shadow: 0px 40px 40px rgb(65, 14, 185);
@@ -432,6 +451,9 @@ a {
 }
 .footer-top__right {
   max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer-top__input {
   margin-right: 40px;
@@ -477,8 +499,8 @@ a {
   padding: 15px;
 }
 .footer-social__icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   transition: all 0.3s;
 }
 .footer-social__icon--1 {
